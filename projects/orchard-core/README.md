@@ -1,4 +1,4 @@
-# Orchard Core Framework
+# Orchard Core Framework (4)
 
 Pre-requisite: Make sure you download .NET Core SDK 2.2 (`2.2.100`) otherwise below examples won't work.
 
@@ -15,5 +15,19 @@ Notes:
 - We will be using beta 3 version of Orchard Core.
 - The samples in this section will receive frequent revisions as I am exploring the framework as I produce these samples.
 
+* [Routing - MVC](/projects/orchard-core/routing)
 
+  This sample shows how routing works in an Orchard Core Framework app.
+
+* [Routing - Razor Pages](/projects/orchard-core/routing-2)
+
+  This sample shows how routing works in an Orchard Core Framework app when you are using Razor Pages.
+
+* [Static Files](/projects/orchard-core/static-files)
+
+  This sample shows how to use static files in the module.
+
+* [Multi Tenant](/projects/orchard-core/multi-tenant)
+
+  This sample shows how Orchard Core Framework handles multi tenancy and how each tenant have its own configuration file.
 

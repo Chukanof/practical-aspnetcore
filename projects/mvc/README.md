@@ -1,4 +1,4 @@
-# MVC (41)
+# MVC (45)
 
 This section contains all micro samples for **ASP.NET Core MVC 2.1**.
 
@@ -186,7 +186,7 @@ There is no more need to include this tool in your project `<DotNetCliToolRefere
 
     Use `Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider` to interrogate the routing table to display all the registered routes in the system, whether it is using conventional routing or attribute routing.
 
-## Localization (7)
+## Localization (9)
 
   We are exploring all the nitty gritty of localization with MVC here.
 
@@ -220,7 +220,15 @@ There is no more need to include this tool in your project `<DotNetCliToolRefere
 
     This sample shows how to use localization resources located in a separate project. Notice how the namespace correspondents to the folder name at the resource project.
 
-## View Component (2)
+  * [MVC Localization - 8](/projects/mvc/mvc-localization-8)
+
+    This sample demonstrates the usage of `AcceptLanguageHeaderRequestCultureProvider` and `Accept-Language` HTTP header.
+
+  * [MVC Localization - 9](/projects/mvc/mvc-localization-9)
+
+    This sample demonstrates the situation of `cultural fallback` behaviour - `Starting from the requested culture, if not found, it reverts to the parent culture of that culture.`[doc](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2#culture-fallback-behavior).
+
+## View Component (4)
 
   We are exploring everything about ViewComponent in this section.
 
@@ -244,6 +252,14 @@ There is no more need to include this tool in your project `<DotNetCliToolRefere
   * [ View Component - Alternative Declaration](/projects/mvc/view-component-2)
 
     This sample is the same as previous sample except the use of Tag Helper invocation. Use `@addTagHelper *, <AssemblyName>` to enable the invocation of view component as a Tag Helper. Pascal-cased view component class and properties are translated into their lower kebab case. 
+
+  * [ View Component - Return View Component result directly from a controller](/projects/mvc/view-component-3)
+
+    This sample shows how to return the output of a View Component directly from a controller. Don't forget that your `_Layout.cshtml` won't be used here. It will just return whatever your View Component is producing.
+
+  * [ View Component - Passing complex object as parameter](/projects/mvc/view-component-4)
+
+    This sample shows you how to pass complex object to the View Component.
 
 ## Razor Class Library (3)
 
